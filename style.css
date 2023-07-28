@@ -87,6 +87,7 @@ html {
     position: absolute;
     top: 2.5rem;
     right: 3rem;
+    z-index: 300;
 }
 
 .close-navbar-icon .line {
@@ -101,11 +102,24 @@ html {
     transform: rotate(-40deg);
 }
 
+.nav-list {
+    height: 100%;
+    display: flex;
+}
+
 .nav-link {
     font-size: 3rem;
     font-weight: 700;
     color: var(--white-color);
     text-transform: uppercase;
+    width: 100%;
+    opacity: .8;
+    transition: all .3s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: var(--primary-color);
 }
 
 /* End of Navbar */
